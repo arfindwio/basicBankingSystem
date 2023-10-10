@@ -1,0 +1,42 @@
+POST http://localhost:3000/api/v1/users
+Content-Type: application/json
+
+{
+    "name":"test",
+    "email":"test@mail.com",
+    "password":"123456",
+}
+
+###
+GET http://localhost:3000/api/v1/users
+
+###
+GET http://localhost:3000/api/v1/users/1
+
+
+###
+PUT http://localhost:3000/api/v1/users/1
+Content-Type: application/json
+
+{
+    "name":"alex",
+    "email":"alex@mail.com"
+}
+
+
+###
+DELETE http://localhost:3000/api/v1/users/1
+
+###
+POST http://localhost:3000/api/v1/posts
+Content-Type: application/json
+
+{
+    "title":"joko",
+    "categories":["express","api","backend"],
+    "authorId":1
+}
+
+
+###
+GET http://localhost:3000/api/v1/posts/1
